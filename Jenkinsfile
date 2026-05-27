@@ -15,6 +15,9 @@ pipeline {
         stage('Preparing') {
             steps {
                 sh 'echo Preparing'
+                sh 'whoami'
+                sh 'pwd'
+                sh 'hostname'
             }
         }
         stage('Git Pulling') {
